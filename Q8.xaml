@@ -1,0 +1,76 @@
+﻿<Page x:Class="ООО_ПРОЕКТ.Q8"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:ООО_ПРОЕКТ"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="Q8"
+     >
+
+    <Grid>
+        <Label Content="Вопрос 8.Как называлась часть личности, которая наиболее тесно связана с реальностью и помогает человеку &#xD;&#xA;воспринимать окружающий мир, узнавать новое и удовлетворять потребности." 
+               HorizontalAlignment="Center" 
+               Margin="0,41,0,0" 
+               VerticalAlignment="Top" 
+               FontFamily="Bahnschrift Condensed" 
+               FontSize="20" Foreground="#FF123F2A" 
+               HorizontalContentAlignment="Center" 
+               VerticalContentAlignment="Center" Height="70" RenderTransformOrigin="0.923,0.728"/>
+        <CheckBox x:Name="incorr1"
+                  Content="Оно." 
+                  HorizontalAlignment="Left" 
+                  Margin="62,159,0,0" 
+                  VerticalAlignment="Top"
+                  FontFamily="Bahnschrift Condensed" 
+                  FontSize="20" Foreground="#FF123F2A"
+                  HorizontalContentAlignment="Center" 
+                  VerticalContentAlignment="Center"/>
+        <CheckBox x:Name="incorr2"
+            Content="Сознание." 
+            HorizontalAlignment="Left" 
+            Margin="62,299,0,0" 
+            VerticalAlignment="Top"
+            FontFamily="Bahnschrift Condensed" 
+            FontSize="20" Foreground="#FF123F2A"
+            HorizontalContentAlignment="Center" 
+            VerticalContentAlignment="Center"/>
+        <CheckBox x:Name="incorr3"
+            Content="Подсознание." 
+            HorizontalAlignment="Left" 
+            Margin="481,159,0,0" 
+            VerticalAlignment="Top"
+            FontFamily="Bahnschrift Condensed" 
+            FontSize="20" Foreground="#FF123F2A"
+            HorizontalContentAlignment="Center" 
+            VerticalContentAlignment="Center"/>
+        <CheckBox x:Name="corr4"
+            Content="Я." 
+            HorizontalAlignment="Left" 
+            Margin="481,299,0,0" 
+            VerticalAlignment="Top"
+            FontFamily="Bahnschrift Condensed" 
+            FontSize="20" Foreground="#FF123F2A"
+            HorizontalContentAlignment="Center" 
+            VerticalContentAlignment="Center"/>
+        <Button x:Name="No_go"
+            Content="Далее" 
+            HorizontalAlignment="Center" 
+            VerticalAlignment="Top" 
+                Width="130" 
+                Height="50" 
+                Background="#FFBFD5CE" 
+                Foreground="#FF255144" 
+                FontFamily="Bahnschrift Condensed" 
+                FontSize="20" 
+                Margin="0,357,0,0" Click="No_go_Click">
+            <Button.Resources>
+                <Style TargetType="{x:Type Border}">
+                    <Setter Property="CornerRadius" 
+                        Value="20"/>
+                </Style>
+            </Button.Resources>
+        </Button>
+    </Grid>
+</Page>

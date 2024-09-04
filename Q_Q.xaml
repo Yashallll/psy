@@ -1,0 +1,47 @@
+﻿<Page x:Class="ООО_ПРОЕКТ.Q_Q"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:ООО_ПРОЕКТ"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="Q_Q">
+    <Page.Background>
+        <ImageBrush ImageSource="C:\Users\anton\OneDrive\Desktop\дз\Практика\ООО ПРОЕКТ\bin\Debug\4.jpg"/>
+    </Page.Background>
+    <Grid>
+        <Label x:Name="bab"
+               Content="Тут будет результат тестирования" 
+               HorizontalAlignment="Center" 
+               Height="80"
+               VerticalAlignment="Top" 
+               Width="550"
+               Margin="0,90,0,0"
+               VerticalContentAlignment="Center" 
+               HorizontalContentAlignment="Center" 
+               FontFamily="Bahnschrift Condensed" 
+               FontSize="20" 
+               Background="{x:Null}" 
+               Foreground="#FF255144"/>
+        <Button x:Name="Go"
+            Content="Меню" 
+            HorizontalAlignment="Center" 
+            VerticalAlignment="Top" 
+                Width="130" 
+                Height="50" 
+                Background="#FFBFD5CE" 
+                Foreground="#FF255144" 
+                FontFamily="Bahnschrift Condensed" 
+                FontSize="20" 
+                Margin="0,265,0,0" Click="Go_Click">
+            <Button.Resources>
+                <Style TargetType="{x:Type Border}">
+                    <Setter Property="CornerRadius" 
+                            Value="20"/>
+                </Style>
+            </Button.Resources>
+        </Button>
+
+    </Grid>
+</Page>
